@@ -10,16 +10,13 @@
     <body>
         <nav>
            <h2>My To Do List</h2>
-           <p>What about now</p>
-           <p id="next-par">Next paragraph</p>
+           <p class="nav-par">What about now</p>
+           <p class="nav-par" id="next-par">Next paragraph</p>
         </nav>
         <main> 
-            <form action="js/main.js" method="post">
-                <label>
-                    Task: 
-                    <input id="task" type="text" name="submitted-name" autocomplete="name" size="25" /> 
-                </label>
-                <button>Submit</button>
+            <form class="input-form" action="js/main.js" method="post">
+                <input class="input-text" id="task" type="text" name="submitted-name" autocomplete="name" size="25" placeholder="Task" /> 
+                <button class="submit-button">Submit</button>
             </form>
         </main>
     </body>
