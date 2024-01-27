@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>  
+    <head lang="sv">
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <title>ToDos</title>
+        <script defer src="js/main.js"></script>
+    </head>
+    <body>
+        <nav>
+           <h2>My To Do List</h2>
+           <p>What about now</p>
+           <p id="next-par">Next paragraph</p>
+        </nav>
+        <main> 
+            <form action="js/main.js" method="post">
+                <label>
+                    Task: 
+                    <input id="task" type="text" name="submitted-name" autocomplete="name" size="25" /> 
+                </label>
+                <button>Submit</button>
+            </form>
+        </main>
+    </body>
+
+</html>
