@@ -13,27 +13,34 @@ const text = document.querySelector(".input-text");
 // Event Listener for task submition 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let todos = localStorage.getItem("tasks");
-    let newToDos = todos.split(',');
-    newToDos.push(text.value);
-    localStorage.setItem("tasks", newToDos);
-    createNewTask(text.value);
-    text.value = "";
+    if (text.value != ""){
+        let todos = localStorage.getItem("tasks");
+        let newToDos = todos.split(',');
+        newToDos.push(text.value);
+        localStorage.setItem("tasks", newToDos);
+        createNewTask(text.value);
+        text.value = "";
+    }else{
+        console.error("Error: Nothing was Submitted");
+    }
 });
 
 const taskInput = document.getElementById("task");
 const taskContent = taskInput.content;
 
+let counter  = 0;
+
 // add Tasks to document
 const createNewTask = (text) => {
+    // create element and attributes
     const taskList = document.querySelector(".task-list");
     let taskLi = document.createElement("li");
     taskLi.className = `task-li-element-${text}`;
     taskLi.appendChild(document.createTextNode(text));
     taskList.appendChild(taskLi);
-    console.log(taskLi);
-}
-
-const deleteTask = (className) => {
-
+    
+    // set an event Listener for when tasks are completed
+    taskLi.addEventListener("click", () => {
+        taskLi.style.textDecoration = "line-through";
+    });
 }

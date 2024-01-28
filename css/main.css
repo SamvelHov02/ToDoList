@@ -9,7 +9,7 @@ body {
 
 nav{
     height: 50px;
-    width: auto;
+    width: 15%;
     justify-content: space-between;
     display: inline;
     text-align: center;
@@ -31,6 +31,14 @@ main{
     height: 100px;
 }
 
+button{
+    background-color: blue;
+    color : white;
+    border: 0px;
+    border-radius: 4px;
+    padding-bottom : 0px;
+}
+
 .nav-par  {
     width: auto;
     margin-bottom : 0;
@@ -40,7 +48,7 @@ main{
 
 .input-text{
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;
@@ -62,5 +70,7 @@ main{
     margin-bottom: 0px;
     margin-top: 5px;
     list-style: none;
-    background-color: yellow;
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
 }
