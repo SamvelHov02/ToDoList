@@ -54,3 +54,13 @@ main{
     display:flex;
 }
 
+.task-list li{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    list-style: none;
+    background-color: yellow;
+}
