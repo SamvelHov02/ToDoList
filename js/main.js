@@ -41,6 +41,6 @@ const createNewTask = (text) => {
     
     // set an event Listener for when tasks are completed
     taskLi.addEventListener("click", () => {
-        taskLi.style.textDecoration = "line-through";
+        taskLi.style.textDecorationLine= "line-through";
     });
 }

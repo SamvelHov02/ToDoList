@@ -73,4 +73,7 @@ button{
     background-color: orange;
     border-radius: 5px;
     color: white;
+    text-decoration-thickness: 4px;
+    text-decoration-color: red;
+    
 }
